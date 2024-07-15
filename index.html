@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="index.css" >
+</head>
+<body>
+    <body>
+        <h1> ✊🏻ROCK -🖐🏻PAPER -✌🏻SCISSORS </h1>
+        <div>
+            <button class="c" id="computerDisplay">🤖COMPUTER:   </button>
+            <button class="p" id="playerDisplay">🧑🏻‍💻PLAYER:   </button>
+            <div class="r" id="resultDisplay">Let's Play!🤩 </div>
+
+        </div>
+        <div id="button" onclick="audios.play()" >
+
+            <button  class="buttons1"  onclick="Game('✊🏻rock')">✊🏻</button>
+            <button class="buttons2"  onclick="Game('🖐🏻paper')">🖐🏻</button>
+            <button class="buttons3" onclick="Game('✌🏻scissors')">✌🏻</button>
+        </div>
+
+        <button  class="choose"type="menu">CHOOSE YOURS😉</button>
+        <div>
+         <form  class="form" >
+            <h3>SCORE</h3>
+            <div class="pscore" style="margin-top: -12px;">
+                PLAYER SCORE:
+                <span id="playerscores">0</span>
+             </div>
+             <div class="cscore">
+                COMPUTER SCORE:
+                <span id="computerscores">0</span>
+             </div>
+         </form>
+        </div>
+        <div >
+            <button class="audio" id="music" onclick="audio.play()">🎵MUSIC</button>
+       <script>
+        const audio = new Audio();
+        audio.src="./WhatsApp Audio 2024-07-14 at 15.53.20_db93a5b3.mp3";
+
+        const audios = new Audio();
+        audios.src="./analog-appliance-button-6-185281.mp3";
+       </script>
+        </div>
+
+        <video id="background-video" autoplay loop muted poster="pink&blue.mp4">
+            <source src="pink&blue.mp4" type="video/mp4">
+          </video>
+       <script src="hii.js" ></script>
+        </body>
+</html>
